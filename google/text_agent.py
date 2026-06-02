@@ -1,7 +1,7 @@
 """Basic text agent using Google ADK."""
 
 import sys
-sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
 
 from google import genai
 from google.genai import types

@@ -5,13 +5,12 @@ A playground for building and experimenting with AI agents using multiple model 
 ## Structure
 
 ```
-├── agents/
-│   ├── google_adk/      # Google Agent Development Kit experiments
-│   ├── openai/          # OpenAI Agents SDK experiments
-│   └── multi_provider/  # Cross-provider agent compositions
-├── voice/
-│   ├── google_adk/      # Voice agents with Google ADK
-│   └── openai/          # Voice agents with OpenAI Realtime API
+├── google/
+│   ├── text_agent.py    # Google ADK text agent
+│   └── voice_agent.py   # Google voice agent (placeholder)
+├── openai/
+│   ├── text_agent.py    # OpenAI Agents SDK text agent
+│   └── voice_agent.py   # OpenAI voice agent (placeholder)
 ├── shared/
 │   └── utils.py         # Shared utilities, config loading
 ├── .env.example         # Template for API keys
@@ -44,10 +43,10 @@ cp .env.example .env
 
 ```bash
 # Text agent examples
-python agents/google_adk/basic_agent.py
-python agents/openai/basic_agent.py
+python google/text_agent.py
+python openai/text_agent.py
 
 # Voice agent examples
-python voice/google_adk/voice_agent.py
-python voice/openai/voice_agent.py
+python google/voice_agent.py
+python openai/voice_agent.py
 ```

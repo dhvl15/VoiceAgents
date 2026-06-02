@@ -1,7 +1,7 @@
 """Basic text agent using OpenAI Agents SDK."""
 
 import sys
-sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
 
 import asyncio
 from agents import Agent, Runner
