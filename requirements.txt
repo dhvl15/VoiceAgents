@@ -1,6 +1,5 @@
 # Google ADK
-google-adk>=1.0.0
-google-genai>=1.0.0
+google-adk>=2.0.0
 
 # OpenAI
 openai>=1.70.0

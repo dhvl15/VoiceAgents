@@ -6,11 +6,10 @@ A playground for building and experimenting with AI agents using multiple model 
 
 ```
 ├── google/
-│   ├── text_agent.py    # Google ADK text agent
-│   └── voice_agent.py   # Google voice agent (placeholder)
-├── openai/
-│   ├── text_agent.py    # OpenAI Agents SDK text agent
-│   └── voice_agent.py   # OpenAI voice agent (placeholder)
+│   └── starter_agent/   # Google ADK starter agent
+│       ├── agent.py     # Agent definition
+│       └── .env         # API key configuration
+├── openai/              # OpenAI agents (to be added)
 ├── shared/
 │   └── utils.py         # Shared utilities, config loading
 ├── .env.example         # Template for API keys
@@ -42,11 +41,8 @@ cp .env.example .env
 ## Running Agents
 
 ```bash
-# Text agent examples
-python google/text_agent.py
-python openai/text_agent.py
-
-# Voice agent examples
-python google/voice_agent.py
-python openai/voice_agent.py
+# Google ADK starter agent
+cd google/starter_agent
+# Add your GOOGLE_API_KEY to .env first
+adk run .
 ```
